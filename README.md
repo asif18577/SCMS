@@ -24,7 +24,7 @@ SUTMS - Inventory Module
   
 SUTMS - Security Module
 - Perform an NMAP scan using "nmap.sh" Script
-- Run Custom scripts as shown in files according to the OS i.e. microsoft.sh, linuz.sh etc.
+- Run Custom scripts as shown in files according to the OS i.e. microsoft.sh, linux.sh etc.
 - Verify the results by running "root@scms:/home/scms# more medium_risk", "root@scms:/home/scms# more high_risk", "root@scms:/home/scms# more low_risk"
 - Merge the files by running the following command "root@scms:/home/scms# cat low_risk medium_risk high_risk >scms_scan_result
 - Verify the content of the file "scms_scan_result", it should look like the sample file " scms_scan_result"
