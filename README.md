@@ -30,7 +30,7 @@ SUTMS - Security Module
 - Verify the content of the file "scms_scan_result", it should look like the sample file " scms_scan_result"
 
 SUTMS - Cloud Integration 
-- Microsoft Azure Blob storage has to be configured according to the template "azcopy_template"
+- Microsoft Azure Blob storage has to be configured according to the template "azcopy_template". Make sure to change allowed IP addresses according to your public IP's.
 - Run the "scms_azure_transfer.sh" script to upload the file to Azure blob storage.
 - Automate the above tasks by adding the entries listed in "scms_cronjobs" file.
 - Access the storage via Azure mobile app or webui, review the logs and make sure the file is getting updated
