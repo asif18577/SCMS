@@ -1,0 +1,3 @@
+0 0 * * * /home/scms/low_risk.sh; /home/scm-
+s/medium_risk.sh; /home/scms/high_risk k.sh; /home-
+/scms/azcopy linux arm64 10.18.1/scms_azure_transfer.sh
