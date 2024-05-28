@@ -29,7 +29,7 @@ SUTMS - Security Module
 - Merge the files by running the following command "root@scms:/home/scms# cat low_risk medium_risk high_risk >scms_scan_result
 - Verify the content of the file "scms_scan_result", it should look like the sample file " scms_scan_result"
 
-  SUTMS - Cloud Integration 
+SUTMS - Cloud Integration 
 - Microsoft Azure Blob storage has to be configured according to the template "azcopy_template"
 - Run the "scms_azure_transfer.sh" script to upload the file to Azure blob storage.
 - Automate the above tasks by adding the entries listed in "scms_cronjobs" file.
