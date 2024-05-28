@@ -1,5 +1,5 @@
 # Artifact
-SCMA - Secure Centralized Management System – Management Platform for Home Network Devices
+SCMS - Secure Centralized Management System – Management Platform for Home Network Devices
 
 ## Features
 
@@ -16,18 +16,22 @@ SCMA - Secure Centralized Management System – Management Platform for Home Net
 
 ## Usage
 One the required softwares are installed as listed in installation instructions, perform the following tasks.
+
 SUTMS - Inventory Module 
 - Configure Zabbix to detect devices automatically by performing SNMP walk, ping sweeps. 
 - Detect devices by using SNMP strings or by install Zabbix device agent.
-- Once the devices are detetected it will show up in Zabbix portal
+- Once the devices are detected it will show up in Zabbix portal
   
-SUTMS - IDS Module according to application detection
-- Download the latest SUTMS rules by executing "sudo suricata-update".
-- Learn the protocols in use via NTOP engine.
-- Run the python script (sutms_suricate.py) to only enable the relevant signatures. (please select the protocols according to your environment)
-- Automate the above tasks by adding the entries listed in "sutms_cronjobs" file.
-- Review the logs and make sure for neccessary hits
+SUTMS - Security Module
+- Perform an NMAP scan using "nmap.sh" Script
+- Run Custom scripts as shown in files according to the OS i.e. microsoft.sh, linuz.sh etc.
+- Verify the results by running "root@scms:/home/scms# more medium_risk", "root@scms:/home/scms# more high_risk", "root@scms:/home/scms# more low_risk"
+- Merge the files by running the following command "root@scms:/home/scms# cat low_risk medium_risk high_risk >scms_scan_result
+- Verify the content of the file "scms_scan_result", it should look like the sample file " scms_scan_result"
 
-SUTMS - Anomaly detection
-- NTOP can be used to detect anomalies, certain use cases are include in "ntop_lua" file.
+  SUTMS - Cloud Integration 
+- Microsoft Azure Blob storage has to be configured according to the template "azcopy_template"
+- Run the "scms_azure_transfer.sh" script to upload the file to Azure blob storage.
+- Automate the above tasks by adding the entries listed in "scms_cronjobs" file.
+- Access the storage via Azure mobile app or webui, review the logs and make sure the file is getting updated
 
