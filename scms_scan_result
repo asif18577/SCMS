@@ -1,0 +1,11 @@
+root@scms:/home/scms# more scms_scan_result
+# Nmap 7.80 scan initiated Mon May 22 20:01:10 2023 as: /usr/bin/nmap
+–privilege -oN /home/scms/scms scan.xml -O 192.168.200.160 Nmap scan
+report for 192.168.200.160 *** Score=10, Risk=Low ***
+# Nmap 7.80 scan initiated Mon May 22 19:19:52 2023 as: /usr/bin/nmap
+–privilege -oN /home/scms/scms scan.xml -O 192.168.200.156 Nmap scan
+report for 192.168.200.156 *** Score=5, Risk=Medium ***
+# Nmap 7.80 scan initiated Mon May 22 19:55:02 2023 as: /usr/bin/nmap
+–privilege -oN /home/scms/scms scan.xml -O 192.168.200.157 Nmap scan
+report for 192.168.200.157 *** Score=1, Risk=High(NO OS DETECTED)
+***
